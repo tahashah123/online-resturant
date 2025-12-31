@@ -2,6 +2,7 @@
     --red: #d63031;
     --yellow: #f1c40f;
     --navy: #192a56;
+    --dark: #2d3436;
     --light: #f7f7f7;
     --white: #ffffff;
 }
@@ -10,7 +11,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +23,8 @@ body {
     color: #333;
 }
 
+
+/* navigation bar */
 a {
     text-decoration: none;
     color: inherit;
@@ -42,14 +49,22 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.nav-links li a:hover,
 .nav-links li a.active {
     color: var(--red);
 }
 
-
+/* hero image */
 .hero {
     background: #f0f0f0;
     text-align: center;
@@ -70,31 +85,25 @@ nav {
 .btn {
     background: var(--red);
     color: white;
-    padding: 12px 30px;
+    padding: 12px 3px;
+    text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
+/* food suggestions */
 
-.steps {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    text-align: center;
-}
 
-.steps .box h3 {
-    font-size: 1.2rem;
-    color: var(--navy);
-}
-
+/* food gallery */
 .gallery {
-    padding: 40px 20px;
+    padding: 60px 5%;
+    background: var(--light);
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
 .gallery-item {
@@ -105,20 +114,51 @@ nav {
 
 .gallery-item img {
     width: 100%;
-    height: 180px;
+    height: 230px;
     object-fit: cover;
 }
 
+/* reuseable layout */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: var(--red);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--navy);
+}
+
+.section-title h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--navy);
+}
+
+.contact h4 {
+    color: var(--red)
+}
+
 .food-name {
-    font-weight: bold;
-    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .price {
     color: var(--red);
-    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
+/* footer */
 footer {
     text-align: center;
     padding: 20px;
