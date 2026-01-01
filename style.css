@@ -265,6 +265,7 @@ nav {
     transition: background 0.3s;
 }
 
+
 .btn:hover {
     background-color: rgb(12, 7, 100);
 }
@@ -404,6 +405,44 @@ nav {
 }
 
 /* contact form */
+.order-section {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.form-full {
+    grid-column: span 2;
+}
+
+/* order form */
 .order-section {
     background: var(--white);
     padding: 40px;
