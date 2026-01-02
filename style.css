@@ -31,7 +31,6 @@ body {
     }
 }
 
-
 /* reuseable layout */
 .section-title {
     text-align: center;
@@ -187,6 +186,34 @@ nav {
     display: block;
 }
 
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    #menu-btn:checked~.nav-links {
+        max-height: 500px;
+        padding: 20px 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
+
 /* hero image */
 .hero {
     min-height: 100vh;
@@ -299,6 +326,12 @@ nav {
 .gallery-item:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+    .gallery-item img {
+        height: 200px;
+    }
 }
 
 /* simple steps */
@@ -551,6 +584,16 @@ nav {
     gap: 20px;
 }
 
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-full {
+        grid-column: span 1;
+    }
+}
+
 .input-group {
     display: flex;
     flex-direction: column;
@@ -613,6 +656,16 @@ nav {
     grid-column: span 2;
 }
 
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-full {
+        grid-column: span 1;
+    }
+}
+
 /* reviews section */
 .reviews-slider {
     display: flex;
@@ -645,6 +698,12 @@ nav {
 
 .review-card:hover {
     transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        flex: 0 0 80%;
+    }
 }
 
 .review-user img {
