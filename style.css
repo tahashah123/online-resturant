@@ -24,6 +24,7 @@ body {
 }
 
 
+
 /* reuseable layout */
 .section-title {
     text-align: center;
@@ -74,6 +75,23 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+}
+
+/* website buttons design */
+.btn {
+    padding: 15px 40px;
+    background-color: var(--red);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(12, 7, 100);
 }
 
 .btn-hero {
@@ -308,23 +326,6 @@ nav {
     transition: 0.3s;
 }
 
-/* website buttons design */
-.btn {
-    padding: 15px 40px;
-    background-color: var(--red);
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-
-.btn:hover {
-    background-color: rgb(12, 7, 100);
-}
-
 /* deals page */
 .combo-grid {
     display: grid;
@@ -533,6 +534,98 @@ nav {
 
 .form-full {
     grid-column: span 2;
+}
+
+/* reviews section */
+.reviews-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.reviews-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.reviews-slider::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 5px;
+}
+
+.review-card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #d7b506;
+    font-size: 0.9rem;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 3rem;
+    color: #eee;
+    font-family: serif;
+}
+
+/* review form */
+.rating-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating label:hover,
+.rating label:hover~label,
+.rating input:checked~label {
+    color: gold;
 }
 
 /* FOOTER */
