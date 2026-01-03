@@ -758,6 +758,7 @@ nav {
 }
 
 /* reviews section */
+/* customer reviews */
 .reviews-slider {
     display: flex;
     gap: 20px;
@@ -853,6 +854,77 @@ nav {
 .rating label:hover~label,
 .rating input:checked~label {
     color: gold;
+}
+
+/* FAQS */
+.faq-section {
+    background: var(--light);
+    padding: 60px 5%;
+}
+
+.faq-section .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-section .section-title span {
+    color: var(--red);
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.faq-section .section-title h2 {
+    font-size: 2rem;
+    color: var(--navy);
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.155);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    background: #f0f0f0;
+    transition: background 0.3s;
+}
+
+.faq-item[open] .faq-question {
+    background: #dcdcdc;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    font-size: 0.95rem;
+    color: #555;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item[open] .faq-answer {
+    max-height: 200px;
+    padding: 20px;
+}
+
+.faq-question:hover {
+    background: #dcdcdc;
 }
 
 /* FOOTER */
