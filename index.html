@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Food Junction</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 
 <body>
@@ -24,7 +26,7 @@
     </nav>
     <!-- hero image -->
     <section class="hero">
-        <h1>Welcome to <span>Food Junction</span></h1>
+        <h1>Welcome to Food Junction</h1>
         <p>Fast Food, Fast Delivery. Quality items at your doorstep.</p>
         <a href="menu.html" class="btn-hero">View Menu</a>
     </section>
@@ -35,7 +37,6 @@
             <h2>Suggestions for You</h2>
         </div>
         <div class="grid">
-            <!-- 6 Suggested Items -->
             <div class="card"><img
                     src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzdCUyMGZvb2R8ZW58MHwwfDB8fHww">
                 <div class="card-body">
@@ -43,143 +44,239 @@
                     <p class="price">Rs.460</p><a href="#order" class="btn">Order Now</a>
                 </div>
             </div>
-            <div class="card"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400">
+            <div class="card"><img
+                    src="https://thescranline.com/wp-content/uploads/2023/12/CHEESEBURGERS-SHOWING-SPECIAL-BURGER-SAUCE-COMING-OUT.jpg">
                 <div class="card-body">
-                    <h3>Classic Beef</h3>
-                    <p class="price">Rs.450</p><a href="#order" class="btn">Order Now</a>
+                    <h3>Food Junction Special</h3>
+                    <p class="price">Rs.550</p><a href="#order" class="btn">Order Now</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card"><img src="https://em-cdn.eatmubarak.pk/55722/dish_image/1722547315.jpg">
-                    <div class="card-body">
-                        <h3>Malai Boti</h3>
-                        <h6>(S,M,L)</h6>
-                        <p class="price">Rs.700 1150 1900</p><a href="#order" class="btn">Order Now</a>
-                    </div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600">
+                <div class="card-body">
+                    <h3>Chicken Teriyaki Pizza</h3>
+                    <p class="price-list"><span>S: Rs.700</span><span>M: Rs.1150</span><span>L: Rs.1750</span>
+                    </p>
+                    <a href="#order" class="btn">Order Now</a>
                 </div>
+            </div>
+            <div class="card"><img
+                    src="data:image/jpeg;base64,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">
+                <div class="card-body">
+                    <h3>Grilled Wrap</h3>
+                    <p class="price">Rs.400</p><a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600">
+                <div class="card-body">
+                    <h3>Dynamite Chicken Bites</h3>
+                    <p class="price">Rs.600</p><a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="card"><img src="https://i.pinimg.com/1200x/c9/30/b4/c930b4c4657bf96148963496073a0198.jpg">
+                <div class="card-body">
+                    <h3>Tuna Pasta</h3>
+                    <p class="price">Rs.600</p><a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+    </section>
+    <!-- Steps -->
+    <section class="steps-section">
+        <div class="section-title">
+            <span>How It Works</span>
+            <h2>Simple Steps</h2>
+        </div>
+
+        <div class="steps">
+            <div class="box">
+                <img src="step1.png" alt="">
+                <h3>Choose your favorite food</h3>
             </div>
 
-            <div class="card">
-                <div class="card"><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400">
-                    <div class="card-body">
-                        <h3>Chicken Mayo Roll</h3>
-                        <p class="price">Rs.300</p><a href="#order" class="btn">Order Now</a>
-                    </div>
-                </div>
+            <div class="box">
+                <img src="step2.png" alt="">
+                <h3>Free & fast delivery</h3>
             </div>
-            <div class="card">
-                <div class="card"><img src="img.jpeg">
-                    <div class="card-body">
-                        <h3>Grilled Wrap</h3>
-                        <p class="price">Rs.400</p><a href="#order" class="btn">Order Now</a>
-                    </div>
-                </div>
+
+            <div class="box">
+                <img src="step3.png" alt="">
+                <h3>Easy payment methods</h3>
             </div>
-            <div class="card">
-                <div class="card"><img src="https://i.pinimg.com/1200x/c9/30/b4/c930b4c4657bf96148963496073a0198.jpg">
-                    <div class="card-body">
-                        <h3>Tuna Pasta</h3>
-                        <p class="price">Rs.600</p><a href="#order" class="btn">Order Now</a>
-                    </div>
-                </div>
+
+            <div class="box">
+                <img src="step4.png" alt="">
+                <h3>Enjoy your food</h3>
             </div>
         </div>
     </section>
-    <!-- steps section -->
-    <div class="section-title">
-        <span>How It Works</span>
-        <h2>Simple Steps</h2>
-    </div>
-    <section class="steps">
-        <div class="box">
-            <img src="step1.png" alt="">
-            <h3>Choose your favorite food</h3>
-        </div>
+    <!-- timings section -->
+    <section class="timings">
+        <h2>Our Timings</h2>
 
-        <div class="box">
-            <img src="step2.png" alt="">
-            <h3>Free & fast delivery</h3>
-        </div>
-
-        <div class="box">
-            <img src="step3.png" alt="">
-            <h3>Easy payment methods</h3>
-        </div>
-
-        <div class="box">
-            <img src="step4.png" alt="">
-            <h3>Enjoy your food</h3>
+        <div class="timing-box">
+            <div class="day">
+                <span>Monday - Sunday</span>
+                <span>12:00 PM - 1:00 AM</span>
+            </div>
         </div>
     </section>
-    <!-- food gallery section -->
+    <!-- food gallery -->
     <section class="gallery">
-
         <div class="section-title">
             <span>Our Food</span>
             <h2>Gallery</h2>
         </div>
 
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086" alt="Burger">
+
+            <!-- 1 -->
+            <div class="gallery-item" id="1">
+                <a href="#img1">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger">
+                </a>
             </div>
 
-            <div class="gallery-item">
-                <img src="https://tse3.mm.bing.net/th/id/OIP.NeL_X1MCpmsopYt2ZfRmngHaEO?rs=1&pid=ImgDetMain&o=7&rm=3"
-                    alt="Pizza">
-            </div>
-            <div class="gallery-item">
-                <img src="https://th.bing.com/th?id=OIF.VgWMhXn%2bj16bCJCPiCblww&w=303&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                    alt="Pizza">
-            </div>
-            <div class="gallery-item">
-                <img src="https://pizza.cafeela.pk/wp-content/uploads/2020/11/Malai-Boti-Pizza.jpg" alt="Pizza">
+            <!-- 2 -->
+            <div class="gallery-item" id="2">
+                <a href="#img2">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+                </a>
             </div>
 
-
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" alt="Roll">
-            </div>
-            <div class="gallery-item">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.BwHH1n23sg-91h8ZLGi1qQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
-                    alt="Wrap">
-            </div>
-            <div class="gallery-item">
-                <img src="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com/-/media/project/gmi/oldelpaso/oldelpaso-ch/oepp/recipes-2017/crispy-chicken-fajitas-16-9.jpg%3Frev%3D20d4ee1fa40d41fb8e7cf526b44a807d"
-                    alt="Twister">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9" alt="Fried Chicken">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Fast Food">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="Snacks">
-            </div>
-            <div class="gallery-item">
-                <img src="https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Zinger Burger">
+            <!-- 3 -->
+            <div class="gallery-item" id="3">
+                <a href="#img3">
+                    <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086" alt="Burger">
+                </a>
             </div>
 
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1758982126977-168e00f33230?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Cheese Pizza Slice">
+            <!-- 4 -->
+            <div class="gallery-item" id="4">
+                <a href="#img4">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.NeL_X1MCpmsopYt2ZfRmngHaEO?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Pizza">
+                </a>
             </div>
 
-            <div class="gallery-item">
-                <img src="https://i.pinimg.com/1200x/c9/30/b4/c930b4c4657bf96148963496073a0198.jpg" alt="Tuna pasta">
+            <!-- 5 -->
+            <div class="gallery-item" id="5">
+                <a href="#img5">
+                    <img src="https://th.bing.com/th?id=OIF.VgWMhXn%2bj16bCJCPiCblww&w=303&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                        alt="Pizza">
+                </a>
             </div>
+
+            <!-- 6 -->
+            <div class="gallery-item" id="6">
+                <a href="#img6">
+                    <img src="https://pizza.cafeela.pk/wp-content/uploads/2020/11/Malai-Boti-Pizza.jpg" alt="Pizza">
+                </a>
+            </div>
+
+            <!-- 7 -->
+            <div class="gallery-item" id="7">
+                <a href="#img7">
+                    <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" alt="Roll">
+                </a>
+            </div>
+
+            <!-- 8 -->
+            <div class="gallery-item" id="8">
+                <a href="#img8">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.BwHH1n23sg-91h8ZLGi1qQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Wrap">
+                </a>
+            </div>
+
+            <!-- 9 -->
+            <div class="gallery-item" id="9">
+                <a href="#img9">
+                    <img src="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com/-/media/project/gmi/oldelpaso/oldelpaso-ch/oepp/recipes-2017/crispy-chicken-fajitas-16-9.jpg"
+                        alt="Twister">
+                </a>
+            </div>
+
+            <!-- 10 -->
+            <div class="gallery-item" id="10">
+                <a href="#img10">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9" alt="Fried Chicken">
+                </a>
+            </div>
+
+            <!-- 11 -->
+            <div class="gallery-item" id="11">
+                <a href="#img11">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Fast Food">
+                </a>
+            </div>
+
+            <!-- 12 -->
+            <div class="gallery-item" id="12">
+                <a href="#img12">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="Snacks">
+                </a>
+            </div>
+
+            <!-- 13 -->
+            <div class="gallery-item" id="13">
+                <a href="#img13">
+                    <img src="https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df?q=80&w=687"
+                        alt="Zinger Burger">
+                </a>
+            </div>
+
+            <!-- 14 -->
+            <div class="gallery-item" id="14">
+                <a href="#img14">
+                    <img src="https://images.unsplash.com/photo-1758982126977-168e00f33230?q=80&w=735"
+                        alt="Cheese Pizza Slice">
+                </a>
+            </div>
+
+            <!-- 15 -->
+            <div class="gallery-item" id="15">
+                <a href="#img15">
+                    <img src="https://i.pinimg.com/1200x/c9/30/b4/c930b4c4657bf96148963496073a0198.jpg"
+                        alt="Tuna Pasta">
+                </a>
+            </div>
+
         </div>
+        <!-- zoom in section -->
+        <div id="img1" class="lightbox"><a href="#1" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349"></div>
+        <div id="img2" class="lightbox"><a href="#2" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"></div>
+        <div id="img3" class="lightbox"><a href="#3" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1606755962773-d324e0a13086"></div>
+        <div id="img4" class="lightbox"><a href="#4" class="close">&times;</a><img
+                src="https://tse3.mm.bing.net/th/id/OIP.NeL_X1MCpmsopYt2ZfRmngHaEO"></div>
+        <div id="img5" class="lightbox"><a href="#5" class="close">&times;</a><img
+                src="https://th.bing.com/th?id=OIF.VgWMhXn%2bj16bCJCPiCblww"></div>
+        <div id="img6" class="lightbox"><a href="#6" class="close">&times;</a><img
+                src="https://pizza.cafeela.pk/wp-content/uploads/2020/11/Malai-Boti-Pizza.jpg"></div>
+        <div id="img7" class="lightbox"><a href="#7" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1604909052743-94e838986d24"></div>
+        <div id="img8" class="lightbox"><a href="#8" class="close">&times;</a><img
+                src="https://tse4.mm.bing.net/th/id/OIP.BwHH1n23sg-91h8ZLGi1qQHaHa"></div>
+        <div id="img9" class="lightbox"><a href="#9" class="close">&times;</a><img
+                src="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com/-/media/project/gmi/oldelpaso/oldelpaso-ch/oepp/recipes-2017/crispy-chicken-fajitas-16-9.jpg">
+        </div>
+        <div id="img10" class="lightbox"><a href="#10" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9"></div>
+        <div id="img11" class="lightbox"><a href="#11" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"></div>
+        <div id="img12" class="lightbox"><a href="#12" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec"></div>
+        <div id="img13" class="lightbox"><a href="#13" class="close">&times;</a><img
+                src="https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df"></div>
+        <div id="img14" class="lightbox"><a href="#14" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1758982126977-168e00f33230"></div>
+        <div id="img15" class="lightbox"><a href="#15" class="close">&times;</a><img
+                src="https://i.pinimg.com/1200x/c9/30/b4/c930b4c4657bf96148963496073a0198.jpg"></div>
+
 
     </section>
-    <!-- Review Section -->
+    <!-- Customer Reviews Section -->
     <section class="container reviews-section">
         <div class="section-title">
             <span>Customer's Review</span>
@@ -303,10 +400,10 @@
             <div class="footer-col">
                 <h3>Follow Us</h3>
                 <ul>
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
-                    <li><a href="https://twitter.com/">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
                 </ul>
             </div>
         </div>
