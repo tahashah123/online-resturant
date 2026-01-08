@@ -11,7 +11,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+}
+
+/* fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 html {
@@ -155,9 +170,12 @@ nav {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 900;
     text-decoration: none;
+    display: inline-block;
+    transform: skew(-10deg);
+    letter-spacing: 2px;
 }
 
 .logo .f {
@@ -166,6 +184,17 @@ nav {
 
 .logo .j {
     color: var(--yellow);
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 22px;
+    }
+}
+
+.logo:hover {
+    transform: skewX(-8deg) scale(1.05);
+    transition: 0.3s ease;
 }
 
 .nav-links {
@@ -973,4 +1002,3 @@ footer {
     color: #999;
     font-size: 0.9rem;
 }
-
