@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Food Junction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVIGATION bar  -->
+    <nav>
+        <a href="index.html" class="logo"><span class="f">Food</span> <span class="j">Junction</span></a>
+        <input type="checkbox" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- hero image -->
+    <section class="hero">
+        <h1>Welcome to Food Junction</h1>
+        <p>Fast Food, Fast Delivery. Quality items at your doorstep.</p>
+        <a href="menu.html" class="btn-hero">View Menu</a>
+    </section>
+    <!-- suggested food items -->
+    <section class="container">
+        <div class="section-title">
+            <span>Special Dishes</span>
+            <h2>Suggestions for You</h2>
+        </div>
+        <div class="grid">
+            <div class="card"><img
+                    src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzdCUyMGZvb2R8ZW58MHwwfDB8fHww">
+                <div class="card-body">
+                    <h3>Mighty Burger</h3>
+                    <p class="price">Rs.460</p><a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="card"><img
+                    src="https://thescranline.com/wp-content/uploads/2023/12/CHEESEBURGERS-SHOWING-SPECIAL-BURGER-SAUCE-COMING-OUT.jpg">
+                <div class="card-body">
+                    <h3>Food Junction Special</h3>
+                    <p class="price">Rs.550</p><a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600">
+                <div class="card-body">
+                    <h3>Chicken Teriyaki Pizza</h3>
+                    <p class="price-list"><span>S: Rs.700</span><span>M: Rs.1150</span><span>L: Rs.1750</span>
+                    </p>
+                    <a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="card"><img src="img.jpeg">
+                <div class="card-body">
+                    <h3>Grilled Wrap</h3>
+                    <p class="price">Rs.400</p><a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600">
+                <div class="card-body">
+                    <h3>Dynamite Chicken Bites</h3>
+                    <p class="price">Rs.600</p><a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="card"><img src="https://i.pinimg.com/1200x/c9/30/b4/c930b4c4657bf96148963496073a0198.jpg">
+                <div class="card-body">
+                    <h3>Tuna Pasta</h3>
+                    <p class="price">Rs.600</p><a href="#order" class="btn">Order Now</a>
+                </div>
+            </div>
+    </section>
+    <!-- Steps -->
+    <section class="steps-section">
+        <div class="section-title">
+            <span>How It Works</span>
+            <h2>Simple Steps</h2>
+        </div>
+
+        <div class="steps">
+            <div class="box">
+                <img src="step1.png" alt="">
+                <h3>Choose your favorite food</h3>
+            </div>
+
+            <div class="box">
+                <img src="step2.png" alt="">
+                <h3>Free & fast delivery</h3>
+            </div>
+
+            <div class="box">
+                <img src="step3.png" alt="">
+                <h3>Easy payment methods</h3>
+            </div>
+
+            <div class="box">
+                <img src="step4.png" alt="">
+                <h3>Enjoy your food</h3>
+            </div>
+        </div>
+    </section>
+    <!-- timings section -->
+    <section class="timings">
+        <h2>Our Timings</h2>
+
+        <div class="timing-box">
+            <div class="day">
+                <span>Monday - Sunday</span>
+                <span>12:00 PM - 1:00 AM</span>
+            </div>
+        </div>
+    </section>
+    <!-- food gallery -->
+    <section class="gallery">
+        <div class="section-title">
+            <span>Our Food</span>
+            <h2>Gallery</h2>
+        </div>
+
+        <div class="gallery-grid">
+
+            <!-- 1 -->
+            <div class="gallery-item" id="1">
+                <a href="#img1">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger">
+                </a>
+            </div>
+
+            <!-- 2 -->
+            <div class="gallery-item" id="2">
+                <a href="#img2">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+                </a>
+            </div>
+
+            <!-- 3 -->
+            <div class="gallery-item" id="3">
+                <a href="#img3">
+                    <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086" alt="Burger">
+                </a>
+            </div>
+
+            <!-- 4 -->
+            <div class="gallery-item" id="4">
+                <a href="#img4">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.NeL_X1MCpmsopYt2ZfRmngHaEO?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Pizza">
+                </a>
+            </div>
+
+            <!-- 5 -->
+            <div class="gallery-item" id="5">
+                <a href="#img5">
+                    <img src="https://th.bing.com/th?id=OIF.VgWMhXn%2bj16bCJCPiCblww&w=303&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                        alt="Pizza">
+                </a>
+            </div>
+
+            <!-- 6 -->
+            <div class="gallery-item" id="6">
+                <a href="#img6">
+                    <img src="https://pizza.cafeela.pk/wp-content/uploads/2020/11/Malai-Boti-Pizza.jpg" alt="Pizza">
+                </a>
+            </div>
+
+            <!-- 7 -->
+            <div class="gallery-item" id="7">
+                <a href="#img7">
+                    <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" alt="Roll">
+                </a>
+            </div>
+
+            <!-- 8 -->
+            <div class="gallery-item" id="8">
+                <a href="#img8">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.BwHH1n23sg-91h8ZLGi1qQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Wrap">
+                </a>
+            </div>
+
+            <!-- 9 -->
+            <div class="gallery-item" id="9">
+                <a href="#img9">
+                    <img src="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com/-/media/project/gmi/oldelpaso/oldelpaso-ch/oepp/recipes-2017/crispy-chicken-fajitas-16-9.jpg"
+                        alt="Twister">
+                </a>
+            </div>
+
+            <!-- 10 -->
+            <div class="gallery-item" id="10">
+                <a href="#img10">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9" alt="Fried Chicken">
+                </a>
+            </div>
+
+            <!-- 11 -->
+            <div class="gallery-item" id="11">
+                <a href="#img11">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Fast Food">
+                </a>
+            </div>
+
+            <!-- 12 -->
+            <div class="gallery-item" id="12">
+                <a href="#img12">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="Snacks">
+                </a>
+            </div>
+
+            <!-- 13 -->
+            <div class="gallery-item" id="13">
+                <a href="#img13">
+                    <img src="https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df?q=80&w=687"
+                        alt="Zinger Burger">
+                </a>
+            </div>
+
+            <!-- 14 -->
+            <div class="gallery-item" id="14">
+                <a href="#img14">
+                    <img src="https://images.unsplash.com/photo-1758982126977-168e00f33230?q=80&w=735"
+                        alt="Cheese Pizza Slice">
+                </a>
+            </div>
+
+            <!-- 15 -->
+            <div class="gallery-item" id="15">
+                <a href="#img15">
+                    <img src="https://i.pinimg.com/1200x/c9/30/b4/c930b4c4657bf96148963496073a0198.jpg"
+                        alt="Tuna Pasta">
+                </a>
+            </div>
+
+        </div>
+        <!-- zoom in section -->
+        <div id="img1" class="lightbox"><a href="#1" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349"></div>
+        <div id="img2" class="lightbox"><a href="#2" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"></div>
+        <div id="img3" class="lightbox"><a href="#3" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1606755962773-d324e0a13086"></div>
+        <div id="img4" class="lightbox"><a href="#4" class="close">&times;</a><img
+                src="https://tse3.mm.bing.net/th/id/OIP.NeL_X1MCpmsopYt2ZfRmngHaEO"></div>
+        <div id="img5" class="lightbox"><a href="#5" class="close">&times;</a><img
+                src="https://th.bing.com/th?id=OIF.VgWMhXn%2bj16bCJCPiCblww"></div>
+        <div id="img6" class="lightbox"><a href="#6" class="close">&times;</a><img
+                src="https://pizza.cafeela.pk/wp-content/uploads/2020/11/Malai-Boti-Pizza.jpg"></div>
+        <div id="img7" class="lightbox"><a href="#7" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1604909052743-94e838986d24"></div>
+        <div id="img8" class="lightbox"><a href="#8" class="close">&times;</a><img
+                src="https://tse4.mm.bing.net/th/id/OIP.BwHH1n23sg-91h8ZLGi1qQHaHa"></div>
+        <div id="img9" class="lightbox"><a href="#9" class="close">&times;</a><img
+                src="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com/-/media/project/gmi/oldelpaso/oldelpaso-ch/oepp/recipes-2017/crispy-chicken-fajitas-16-9.jpg">
+        </div>
+        <div id="img10" class="lightbox"><a href="#10" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9"></div>
+        <div id="img11" class="lightbox"><a href="#11" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"></div>
+        <div id="img12" class="lightbox"><a href="#12" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec"></div>
+        <div id="img13" class="lightbox"><a href="#13" class="close">&times;</a><img
+                src="https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df"></div>
+        <div id="img14" class="lightbox"><a href="#14" class="close">&times;</a><img
+                src="https://images.unsplash.com/photo-1758982126977-168e00f33230"></div>
+        <div id="img15" class="lightbox"><a href="#15" class="close">&times;</a><img
+                src="https://i.pinimg.com/1200x/c9/30/b4/c930b4c4657bf96148963496073a0198.jpg"></div>
+
+
+    </section>
+    <!-- Customer Reviews Section -->
+    <section class="container reviews-section">
+        <div class="section-title">
+            <span>Customer's Review</span>
+            <h2>What They Say</h2>
+        </div>
+
+        <div class="reviews-slider">
+            <div class="review-card">
+                <span class="quote-icon">“</span>
+                <div class="review-user">
+                    <img
+                        src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360">
+                    <div>
+                        <h3>Usman Tariq</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p>The best zinger burger I've had in a long time! Delivery was super fast and food was hot.</p>
+            </div>
+
+            <div class="review-card">
+                <span class="quote-icon">“</span>
+                <div class="review-user">
+                    <img
+                        src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360">
+                    <div>
+                        <h3>Ahmed Raza</h3>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <p>Pizza crust was perfect. Highly recommend the family deals for weekend dinners.</p>
+            </div>
+
+            <div class="review-card">
+                <span class="quote-icon">“</span>
+                <div class="review-user">
+                    <img
+                        src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360">
+                    <div>
+                        <h3>Hassan Ali</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p>Healthy options like salads are actually fresh. Great service and friendly riders.</p>
+            </div>
+
+            <div class="review-card">
+                <span class="quote-icon">“</span>
+                <div class="review-user">
+                    <img
+                        src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360">
+                    <div>
+                        <h3>Ayesha</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p>Love the spicy twisters! Delivery was on time and packaging was neat.</p>
+            </div>
+
+            <div class="review-card">
+                <span class="quote-icon">“</span>
+                <div class="review-user">
+                    <img
+                        src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360">
+                    <div>
+                        <h3>Ali K.</h3>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <p>Great service, tasty burgers. Will order again for sure!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Order Form Section -->
+    <section id="order" class="container">
+        <div class="section-title">
+            <span>Order Now</span>
+            <h2>Free and Fast</h2>
+        </div>
+        <div class="order-section">
+            <form class="form-grid">
+                <div class="input-group"><label>Your Name</label><input type="text" placeholder="Enter your name"></div>
+                <div class="input-group"><label>Your Number</label><input type="tel" placeholder="Enter your phone">
+                </div>
+                <div class="input-group"><label>Your Order</label><input type="text" placeholder="Food name"></div>
+                <div class="input-group"><label>Additional Food</label><input type="text"
+                        placeholder="Extra drinks/fries">
+                </div>
+                <div class="input-group"><label>How Much</label><input type="number" placeholder="Quantity"></div>
+                <div class="input-group"><label>Date and Time</label><input type="datetime-local"></div>
+                <div class="input-group form-full"><label>Your Address</label><textarea placeholder="Enter full address"
+                        rows="3"></textarea></div>
+                <div class="input-group form-full"><label>Your Message</label><textarea
+                        placeholder="Any special instructions" rows="3"></textarea></div>
+                <button type="submit" class="btn" style="padding: 15px; font-weight: bold; width: 150px;">Order
+                    Now</button>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><a href="#">+92 300 1234567</a></li>
+                    <li><a href="#">creativescroll.io@gmail.com</a></li>
+                    <li><a href="#">Lahore, Punjab, Pakistan</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2025 Food Junction | Fast & Tasty Delivery</div>
+    </footer>
+</body>
+
+</html>
