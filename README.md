@@ -76,8 +76,8 @@ Reflections
 
 Connect  
 
-GitHub Repository: Add your repo link here  
-Live Website: Add your live site link here  
+GitHub Repository: https://github.com/tahashah123/online-resturant.git  
+Live Website: https://tahashah123.github.io/online-resturant/   
 
 Credits  
 Course: AICT  
